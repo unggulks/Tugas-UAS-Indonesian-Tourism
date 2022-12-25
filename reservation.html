@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Tugas UAS - Indonesian Tourism</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#Home" class="nav__logo">Unggul Prasetyo U | 201011401212</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="cultures.html" class="nav__link">Culture</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="destination.html" class="nav__link">Destination</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="hotel.html" class="nav__link">Hotel  </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link active-link">Reservation</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/home1.jpg" alt="" class="home__img2">
+
+                <div class="home__container2 container grid">
+                    <div class="home__data">
+                        <h1 class="home__data-title">Pesan Trip Sekarang!</h1>
+                    </div>
+                </div>
+            </section>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">Formulir Pemesanan<br><br></bt></h2>
+                <form action="" method="" class="book-form" name="datapribadi"> 
+                    <div class="about__container container grid">
+                        <div class="flex">
+                           <div class="inputBox">
+                              <span>Nama :</span>
+                              <input type="text" placeholder="Masukan Nama Anda" name="nama">
+                           </div>
+                           <div class="inputBox">
+                              <span>Tujuan :</span>
+                              <select name="tujuan">
+                                <option value="#">==Pilih Tujuan Anda==</option>
+                                <option value="pantaikuta">Pantai Kuta</option>
+                                <option value="borobudur">Borobudur</option>
+                                <option value="tanatoraja">Tana Toraja</option>
+                                <option value="rajaampat">Raja Ampat</option>
+                                <option value="danautoba">Danau Toba</option>
+                              </select>
+                           </div>
+                           <div class="inputBox">
+                              <span>Tanggal Berangkat :</span>
+                              <input type="date" name="berangkat">
+                           </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                               <span>Email :</span>
+                               <input type="email" placeholder="Masukan Email Anda" name="email">
+                            </div>
+                            <div class="inputBox">
+                               <span>Jumlah Orang :</span>
+                               <input type="number" placeholder="Jumlah Orang" name="tamu">
+                            </div>
+                            <div class="inputBox">
+                               <span>Tanggal Kembali :</span>
+                               <input type="date" name="kembali">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="btn___container">
+                        <div class="btn___center">
+                            <button type="button" onClick="inputdata()" class="button booking" data-id="3">Submit</button>
+                        </div>
+                    </div>
+                    <div class="row  container" style="overflow-x:auto;">
+                        <table class="styled-table" id="databel">
+                          <thead>
+                            <tr>
+                              <th scope="col">Nama</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Tujuan</th>
+                              <th scope="col">Tamu</th>
+                              <th scope="col">Tanggal Berangkat</th>
+                              <th scope="col">Tanggal Kembali</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script>
+            function inputdata() {
+                var n = document.forms["datapribadi"]["nama"].value;
+                var e = document.forms["datapribadi"]["email"].value;
+                var p = document.forms["datapribadi"]["tujuan"].value;
+                var i = document.forms["datapribadi"]["tamu"].value;
+                var s = document.forms["datapribadi"]["berangkat"].value;
+                var u = document.forms["datapribadi"]["kembali"].value;
+          
+              var tabel = document.getElementById("databel").getElementsByTagName('tbody')[0];
+              var baris = tabel.insertRow();
+              var kol1 = baris.insertCell(0);
+              var kol2 = baris.insertCell(1);
+              var kol3 = baris.insertCell(2);
+              var kol4 = baris.insertCell(3);
+              var kol5 = baris.insertCell(4);
+              var kol6 = baris.insertCell(5);
+          
+          
+              kol1.innerHTML = n;
+              kol2.innerHTML = e;
+              kol3.innerHTML = p;
+              kol4.innerHTML = i;
+              kol5.innerHTML = s;
+              kol6.innerHTML = u;
+            }
+        </script>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Indonesian Tourism</h3>
+                        <p class="footer__description">You choose the destination, 
+                            <br> we offer you the experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Links</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Cultures</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Destination</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Hotel</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Biodata</h3>
+                        <p class="footer__description">Unggul Prasetyo Utomo 
+                            <br>201011401212
+                            <br>05TPLE004
+                        </p>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Keterangan</h3>
+                        <p class="footer__description">Web ini dibuat untuk 
+                            <br>Tugas praktek UAS
+                            <br>Mata kuliah Pemrograman Web
+                        </p>
+                    </div>
+    
+                    
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022 Created By Unggul Prasetyo U</p>
+                    <div class="footer__terms">
+                        <p class="footer__copy"> Tugas UAS - Indonesian Tourism</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

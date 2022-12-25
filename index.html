@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Tugas UAS - Indonesian Tourism</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#Home" class="nav__logo">Unggul Prasetyo U | 201011401212</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="cultures.html" class="nav__link">Culture</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="destination.html" class="nav__link">Destination</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="hotel.html" class="nav__link">Hotel</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="reservation.html" class="nav__link">Reservation</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/home1.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Discover your destination</span>
+                        <!--<h1 class="home__data-title">Indonesian Tourism</h1>-->
+                        <h1 class="home__data-title">Explore The <br> Best <b>Destination <br> Indonesian Tourism</b></h1>
+                        <a href="#discover" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">5 best places to visit</span>
+                            <a href="destination.html" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/home2.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">More Information <br> About The Local Cultures</h2>
+                        <p class="about__description">
+                            Kekayaan alam dan budaya merupakan komponen penting dalam pariwisata di Indonesia.
+                            Nikmati berbagai seni dan budaya lokal yang dapat di kunjungi di Indonesia.
+                        </p>
+                        <a href="cultures.html" class="button">More Information</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the most <br> attractive places</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover1.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Pantai Kuta</h2>
+                                <span class="discover__description">Bali</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Borobudur</h2>
+                                <span class="discover__description">Jawa Tengah</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Tana Toraja</h2>
+                                <span class="discover__description">Sulawesi Selatan</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Raja Ampat</h2>
+                                <span class="discover__description">Papua</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 5 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover5.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Danau Toba</h2>
+                                <span class="discover__description">Sumatera Utara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn___container">
+                    <div class="btn___center">
+                        <a href="destination.html" class="button" style="align-items: center;">More Information</a>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">7</h2>
+                            <span class="experience__description">Year <br> Experience</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">50</h2>
+                            <span class="experience__description">Complete <br> tours</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">90+</h2>
+                            <span class="experience__description">Tourist <br> Destination</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Choose Your Place to Stay</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Amnaya Resort Kuta</h3>
+                                <span class="place__subtitle">Bali</span>
+                                <span class="place__price">Rp. 1.000.000</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button" onclick = "location.href='hotel.html';">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,7</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Plataran Heritage</h3>
+                                <span class="place__subtitle">Jawa Tengah</span>
+                                <span class="place__price">Rp. 2.500.000</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button" onclick = "location.href='hotel.html';">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Toraja Heritage</h3>
+                                <span class="place__subtitle">Sulawesi Selatan</span>
+                                <span class="place__price">Rp. 800.000</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button" onclick = "location.href='hotel.html';">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">PapuArts Alter</h3>
+                                <span class="place__subtitle">Papua</span>
+                                <span class="place__price">Rp. 1.500.000</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button" onclick = "location.href='hotel.html';">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place5.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Taman Simalem Resort</h3>
+                                <span class="place__subtitle">Sumatera Utara</span>
+                                <span class="place__price">Rp. 1.000.000</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button" onclick = "location.href='hotel.html';">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="btn___container">
+                    <div class="btn___center">
+                        <a href="reservation.html" class="button">Reserve a Place</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Indonesian Tourism</h3>
+                        <p class="footer__description">You choose the destination, 
+                            <br> we offer you the experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Links</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Cultures</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Destination</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Hotel</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Biodata</h3>
+                        <p class="footer__description">Unggul Prasetyo Utomo 
+                            <br>201011401212
+                            <br>05TPLE004
+                        </p>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Keterangan</h3>
+                        <p class="footer__description">Web ini dibuat untuk 
+                            <br>Tugas praktek UAS
+                            <br>Mata kuliah Pemrograman Web
+                        </p>
+                    </div>
+    
+                    
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022 Created By Unggul Prasetyo U</p>
+                    <div class="footer__terms">
+                        <p class="footer__copy"> Tugas UAS - Indonesian Tourism</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
